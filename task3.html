@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Grades & Feedback</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+  <div class="header">
+    <h1>My Website</h1>
+  </div>
+
+  <div class="navbar">
+        <a href="index.html">Task 1</a>
+        <a href="task2.html">Task 2</a>
+        <a href="task3.html">Task 3</a>
+        <a href="task4.html">Task 4</a>
+  </div>
+
+  <h2 id="grades-heading">Student Grades</h2>
+
+  <table class="table-grades" aria-describedby="grades-desc">
+    <thead>
+      <tr><th>Name</th><th>Subject</th><th>Grade</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Aigerim N.</td><td>Mathematics</td><td>A</td></tr>
+      <tr class="highlight-row"><td>Aliya S.</td><td>Physics</td><td>A+</td></tr>
+      <tr><td>Rustam K.</td><td>Biology</td><td>B</td></tr>
+      <tr><td>Saniya T.</td><td>Computer Science</td><td>A</td></tr>
+    </tbody>
+  </table>
+
+  <div id="grades-desc">Highlighted row — top performer.</div>
+
+  <form id="feedback-form" action="#" method="post" novalidate>
+  <h3 style="margin:0 0 8px; text-align:center; color:#5D001E;">Feedback Form</h3>
+
+  <label for="name">Name</label>
+  <input type="text" id="name" name="name" placeholder="Your name">
+
+  <label for="email">Email</label>
+  <input type="email" id="email" name="email" placeholder="you@example.com">
+
+  <label for="role">Role</label>
+  <select id="role" name="role">
+    <option>Student</option>
+    <option>Teacher</option>
+    <option>Other</option>
+  </select>
+
+  <p style="font-weight:700; margin-top:12px;">Did you find this page useful?</p>
+  <label class="radio-option">
+    <input type="radio" name="useful" value="yes" checked>
+    Yes
+  </label>
+  <label class="radio-option">
+    <input type="radio" name="useful" value="no">
+    No
+  </label>
+
+  <label for="comments">Comments</label>
+  <textarea id="comments" name="comments" rows="4" placeholder="Your comments..."></textarea>
+
+  <button type="submit" class="submit-btn">Submit</button>
+</form>
+
+</body>
+</html>
